@@ -28,7 +28,7 @@ fn main() {
     println!("");
 
     // List all the available operators to select one.
-    let operators = ["add", "subtract", "multiply", "divide"];
+    let operators = ["Add", "Subtract", "Multiply", "Divide"];
 
     for (num, operator) in operators.iter().enumerate() {
         println!("{}: {}", num + 1, operator);
@@ -50,16 +50,16 @@ fn main() {
     let mut result: i32 = 0;
 
     match operator {
-        "add" => result = add(num1, num2),
-        "subtract" => result = subtract(num1, num2),
-        "multiply" => result = multiply(num1, num2),
-        "divide" => result = divide(num1, num2),
+        "Add" => result = add(num1, num2),
+        "Subtract" => result = subtract(num1, num2),
+        "Multiply" => result = multiply(num1, num2),
+        "Divide" => result = divide(num1, num2),
         _ => println!("Sorry, invalid operator selected."),
     };
 
     println!("");
 
-    println!("Result for operator '{}' of {} and {} is: {}", operator, num1, num2, result);
+    println!("Result for operator '{}' of numbers {} and {} is: {}", operator, num1, num2, result);
 }
 
 fn add(num: i32, num2: i32) -> i32 {
